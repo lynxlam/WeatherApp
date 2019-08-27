@@ -1,0 +1,107 @@
+Contributions for Group 37
+
+Linh:
+- Designed the full look for the application.
+
+- Gathered feedbacks from other team members and re-designed the application appropriately. Distributed the design to other team members for implementation.
+
+- Did an online research to find a new API data, since the OpenWeather API does not provide all the weather information that we need.
+
+- Decided to use Dark Sky API, examined the Dark Sky API Document and parsed the majority of the API data from Dark Sky API.
+
+- Implemented the main daily screen for the application.
+
+- Fully implemented most features for the application. The work includes seaching for libraries, writing additional helper functions,
+
+adding appropriate CSS styles, and checking the compatibility of the code. The features are :
+
+	+ The horizontal sliding tabs showing hourly temperature and apparent (real-feel) temperatures.
+
+	+ The transitions between pages (or divs) when clicking on each tab buttons.
+
+	+ The circular progress bar that shows the weather state corresponding to users' input on the slider.
+
+	+ The color inside the progress bar that changes according to the precipitation intensity.
+
+	+ The slider that takes users' time input.
+
+	+ The background image that changes according to the current weather state.
+
+	+ The weather icon inside the circle that changes dynamically according to the chosen weather state.
+
+	+ The overflow - scroller (for both x and y axes) to enable scrolling in case the content does not fit the screen
+
+	(for both the main screen and the weekly page).
+	
+- Created a 2-column layout to display detailed information (wind speed, visibility, etc.) of the current weather state.
+
+- Revised the parsing function for the weekly page writen by Nuh and Haidar to increase readability
+
+  and to match the existing variables and functions previously written by Linh and Seb.
+ 
+- Added most of the comments appropriately throughout the Iphone class (for functions, components, and variables) to increase the readability of the code.
+
+- Combined Seb and Nuh's work to make the design look coherent.
+
+- Consistently debugged the code. Assisted Seb and Nuh in their implementation.
+
+- Edited the layout of the weekly-page (by Nuh and Haidar) to make the icon size fit the design.
+
+- Edited the CSS style of the weekly-page to make it compatible with the scrolling feature.
+
+- Searched for compatible React libraries to be included in the application.
+
+- Edited the background image to increase readability and aesthetics.
+
+- Wrote the README.txt document.
+
+- Changed the color of svg logos to match the design.
+
+- Controlled the flow of the application.
+
+
+Seb:
+- Gathered and parsed the majority of the API data from OpenWeatherApp necessary for the implementation (later replaced by DarkSky)
+
+- Displayed the data on the app in a simple format for debugging purposes (edited later)
+
+- Created the divs for easy hourly display of time, icon, and temperature in the slider, which allows all three elements to move with the slider.
+
+- Built functions for conversion of the Unix timestamps given by the API to different formats such as hour, day, and time (getDayName, unixToMin, unixToHours).
+
+- Created a Dropbox to facilitate teamwork and allow everyone to work on the code
+
+- Edited parseResponse to use these new methods in order to properly display the data.
+
+- Found, downloaded, and imported necessary icons into index.js. The icons are from http://adamwhitcroft.com/climacons/.
+
+- Wrote getIconSource() to determine the icon needed based on the weather data
+
+- Wrote the comments to explain variables created throughout the code.
+
+- Restored dropbox code after it was accidentally broken by Haidar or Nuh
+
+
+
+Nuh:
+- Completed the entire CSS for the weekly page view
+
+- Consistently debugging and later changed the data received from the api from state form to Array form.
+
+- Changed weather source from  openWeatherAPI  to darkSky and later wrote the function that stored the data received from darkSky.
+
+- Imported, to be used, background images.
+
+- Implemented the Icon method, created by seb, into the render method.
+
+- Wrote the functions that fetch the current date which also included the month
+
+
+Haidar:
+- Wrote the function that takes the Api data and converts it to data to be stored in state form (was later changed to an Array).
+
+- Wrote code comments.
+
+- Created the weekly-page blueprint.(the return method and the code within)
+
+- Inserted received data into the blueprint.

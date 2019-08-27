@@ -1,0 +1,245 @@
+@import '~style/helpers';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/clear-night.jpg');
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.overflow{
+	overflow-y : scroll;
+  overflow-x: hidden;
+	height: 550px;
+}
+.subHead{
+	font-size: 1.2em;
+	text-align: left;
+	//padding-right: 30
+}
+.details {
+	padding-left: 330px;
+	padding-top: 65px;
+	position:absolute;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.weekPrecipitation{
+	display: inline-block;
+	padding-left: 150px;
+	position: static;
+	text-align: center;
+}
+
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+.city1 {
+	flex: 1;
+	text-align: left;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+.conditions {
+	flex: 1;
+	font-size: 1em;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.conditions1 {
+	flex: 1;
+	font-size: 1em;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+.categoryTitle{
+	margin-top: 10px;
+	flex: 0.8;
+	font-size: 0.8em;
+	font-weight: 100;
+}
+.categoryDetail{
+	margin-top: 1px;
+	flex: 1;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+
+.tab {
+  //overflow: hidden;
+  border: 1px solid #ccc;
+
+  //background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.scrolling{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+  .card {
+    display: inline-block;
+		margin: 3px 3px;
+}
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.center {
+	text-align: center;
+	margin: 0;
+}
+.overlay{
+	position: absolute;
+	top: 15%;
+	left: 35.5%;
+	margin: 0 auto;
+	//background-color: yellow;
+	z-index: 2;
+}
+.back{
+	position: relative;
+	//background-color: pink;
+	z-index: 1;
+	text-align: center;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.date{
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+.description{
+font-size: 1em;
+text-align: left;
+margin-right: 25%;
+
+}
+
+.weather{
+	font-size: 18px;
+	padding-left:100px;
+	font-weight: bolder;
+	padding-top:10px;
+}
+.weeklyWeather{
+	display: inline-block;
+}
+.block{
+	display: flex;
+	flex-direction: column;
+	border-bottom:1px solid white;
+	width: 414px;
+	min-height: 130px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.precipitationName{
+
+	//right: 0px;
+  text-align: center;
+	padding-left: 300px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}
+.img{
+	width: 10px;
+	height: 20px;
+	align-content: center;
+}
