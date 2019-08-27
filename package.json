@@ -2,15 +2,19 @@
   "name": "weatherapp-boilerplate",
   "version": "1.1.0",
   "description": "Preact starter project for a weather app powered by webpack.",
+  "homepage": "https://linhlam2020.github.io/WeatherApp/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
     "start": "serve build -s -c 1",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "prestart": "npm run build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build && ncp src/assets build/assets",
     "test": "npm run -s lint && npm run -s test:karma",
     "test:karma": "karma start test/karma.conf.js --single-run",
-    "lint": "eslint {src,test}"
+    "lint": "eslint {src,test}",
+
   },
   "keywords": [
     "preact",
@@ -103,5 +107,4 @@
   "bugs": {
     "url": "https://github.com/Juan-Alvarado/weatherapp-boilerplate/issues"
   },
-  "homepage": "https://github.com/Juan-Alvarado/weatherapp-boilerplate#readme"
 }
