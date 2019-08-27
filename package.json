@@ -13,8 +13,7 @@
     "prebuild": "mkdirp build && ncp src/assets build/assets",
     "test": "npm run -s lint && npm run -s test:karma",
     "test:karma": "karma start test/karma.conf.js --single-run",
-    "lint": "eslint {src,test}",
-
+    "lint": "eslint {src,test}"
   },
   "keywords": [
     "preact",
@@ -99,12 +98,5 @@
   "main": "webpack.config.babel.js",
   "directories": {
     "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Juan-Alvarado/weatherapp-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Juan-Alvarado/weatherapp-boilerplate/issues"
-  },
+  }
 }
