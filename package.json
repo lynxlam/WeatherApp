@@ -91,7 +91,7 @@
     "react-slick": "^0.23.2",
     "react-tabs": "^3.0.0",
     "roundy": "^2.0.5",
-    "serve": "^2.0.0",
+    "serve": "^10.1.2",
     "slick-carousel": "^1.8.1",
     "vue-circle-slider": "^1.0.2"
   },
